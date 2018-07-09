@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class LoginComponent {
 
   log(x) {
+    console.log(x);
     console.log(x.loginId);
     console.log(x.password);
   }
