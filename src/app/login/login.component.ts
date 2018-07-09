@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit() {
+  }
+  loginSubmit(e) {
+    console.log('login submit method is called');
+    const loginId = e.target.element[0].value();
+    console.log(loginId);
+    return false;
   }
 
 }
